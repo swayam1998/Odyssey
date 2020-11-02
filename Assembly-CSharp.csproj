@@ -66,6 +66,7 @@
      <Compile Include="Assets\Asset Store\_MK\MKGlowFree\Scripts\IDimension.cs" />
      <Compile Include="Assets\Asset Store\_MK\MKGlowFree\Scripts\Resources.cs" />
      <Compile Include="Assets\Asset Store\_MK\MKGlowFree\Scripts\Common.cs" />
+     <Compile Include="Assets\cubeController.cs" />
      <None Include="Assets\Asset Store\_MK\MKGlowFree\Shaders\UI\UI-DefaultFont.shader" />
      <None Include="Assets\Asset Store\_MK\MKGlowFree\Shaders\UI\UI-Unlit-Detail.shader" />
      <None Include="Assets\Asset Store\_MK\MKGlowFree\Shaders\UI\UI-Unlit-TextDetail.shader" />

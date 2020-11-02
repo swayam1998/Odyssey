@@ -23,10 +23,9 @@ public class levelLooper : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log(other.name);
         if(other.gameObject.tag == "Level")
         {            
-            frontLvl = Instantiate(lvlPrefab, new Vector3(0, 0, playerPos.z) + new Vector3(0,0,160), lvlPrefab.transform.rotation);
+            frontLvl = Instantiate(lvlPrefab, new Vector3(0, 0, playerPos.z) + new Vector3(0,0,380), lvlPrefab.transform.rotation);
             Destroy(backLvl);
             backLvl = midLvl;
             midLvl = frontLvl;

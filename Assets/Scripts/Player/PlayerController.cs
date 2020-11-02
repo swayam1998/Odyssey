@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     public float moveSpeed = 10f;
-    public float zSpeed = 80;
+    public float zSpeed = 80f;
     public Camera mainCam;
     private Vector3 CamPos;
 
