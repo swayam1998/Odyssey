@@ -11,10 +11,12 @@ public class TractorBeam : MonoBehaviour
     [SerializeField] float maxH = 10;
     [SerializeField] float maxR = 1;
 
+    public GameObject beam;
     // Start is called before the first frame update
     void Start()
     {
-        
+        beam = GameObject.Find("tractorBeam");
+        beam.GetComponent<BoxCollider>().enabled = false;
     }
 
     // Update is called once per frame
@@ -23,6 +25,12 @@ public class TractorBeam : MonoBehaviour
         if(Input.GetButtonDown("Jump"))
         {
             tractorBeam.transform.localScale = new Vector3(0.1f,0.1f,0.1f);
+            beam.GetComponent<BoxCollider>().enabled = true;
+        }
+
+        if (Input.GetButtonUp("Jump"))
+        {
+            beam.GetComponent<BoxCollider>().enabled = false;
         }
 
         if(Input.GetButton("Jump"))
@@ -50,5 +58,6 @@ public class TractorBeam : MonoBehaviour
                 tractorBeam.transform.localScale -= scaleRad;
             }
         }
+        
     }
 }

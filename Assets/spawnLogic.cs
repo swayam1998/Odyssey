@@ -7,18 +7,21 @@ public class spawnLogic : MonoBehaviour
     public GameObject spawnObj;
     public float spawnTime;
     public float spawnOffset;
+    public float xPos, yPos;
     private float timer;
     private float randPos;
 
     // Start is called before the first frame update
     void Start()
     {
-        timer = spawnTime;
+        timer = spawnTime;        
     }
 
     // Update is called once per frame
     void Update()
     {
+        transform.position = new Vector3(xPos, yPos, transform.position.z);
+
         randPos = spawnOffset * Random.Range(0f, 100f) * 0.01f;
 
         if (timer > 0)
