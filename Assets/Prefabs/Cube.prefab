@@ -111,7 +111,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   suckSpeed: 11.35
   target: {fileID: 0}
-  thrust: 61.19
+  thrust: 114.45
   rb: {fileID: 3195663609856230298}
   timer: 9.18
 --- !u!54 &3195663609856230298
